@@ -12,7 +12,9 @@ def main():
 
 main()
 
-# set format x "%H:%M"
+# set format x "%b %d\n%H:%M"
 # set timefmt "%Y-%m-%dT%H:%M:%S"
 # set xdata time
+# set xlabel "Time"
+# set ylabel "Temp (C)"
 # plot [ ] [0:25] '/tmp/sensor-a.txt' using 1:3, '/tmp/sensor-b.txt' using 1:3
