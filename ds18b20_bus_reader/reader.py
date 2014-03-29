@@ -14,7 +14,7 @@ class Timestamper(LineReceiver):
 
     def lineReceived(self, line):
         self.output.write("%s %s\n" % (datetime.now().isoformat(), line))
-
+        self.output.flush()
 
 def main():
     SerialPort(Timestamper(stdout), b"/dev/ttyUSB0", reactor)
